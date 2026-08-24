@@ -1,0 +1,122 @@
+/* Variables de color y tipografía */
+:root {
+    --bg-dark: #2a313c; /* Azul oscuro/grisáceo extraído de la imagen */
+    --text-light: #fdfdfd;
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Roboto', sans-serif;
+}
+
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg-dark);
+}
+
+/* Cabecera (Logo) */
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo h1 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logo p {
+    font-size: 0.75rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+/* Imagen principal */
+.hero-image {
+    width: 100%;
+    height: 50vh; /* Ocupa la mitad de la pantalla */
+    /* Usamos una imagen de stock similar (abogados/balanza). Luego puedes reemplazar la URL por tu imagen real */
+    background-image: url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 4px solid var(--bg-dark);
+}
+
+/* Contenido inferior (Eslogan y Contacto) */
+.hero-content {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    padding: 60px 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+
+/* Botón de WhatsApp */
+.contact-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+
+.contact-text {
+    font-weight: 300;
+}
+
+.whatsapp-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 400;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.whatsapp-link:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.whatsapp-link i {
+    font-size: 1.6rem;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    .slogan {
+        font-size: 1.6rem;
+    }
+    
+    .contact-action {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
