@@ -4,43 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alba & Asociados | Estudio Jurídico</title>
+    
     <link rel="stylesheet" href="../CSS/styles.css">
-    
+    <link rel="stylesheet" href="../JAVASCRIPT/script.js">
+
     <!-- Fuentes de Google: Serif para el eslogan, Sans-serif para contacto -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">    
     <!-- FontAwesome para el ícono de WhatsApp -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <h1>Alba & Asociados</h1>
-            <p>Estudio Jurídico</p>
-        </div>
-    </header>
+   <header id = "mainHeader">
+    <div class = "logo">
+        Alba & Asociados<br>
+        <span>
+            ESTUDIO JURIDICO
+        </span>
+    </div>
+    <div class="header-info">
+        <a href="#quienes-somos"><i class="fa-solid fa-users"></i> ¿QUIENES SOMOS?</a>
+        <a href="#contacto"><i class="fa-solid fa-phone"></i> CONTACTO</a>
+        <a href="#servicios"><i class="fa-solid fa-scale-balanced"></i> SERVICIOS</a>
+    </div>
+   </header>
 
-    <main>
-        <!-- Sección de la imagen (apretón de manos y balanza) -->
-        <section class="hero-image">
-            <!-- La imagen se carga por CSS como fondo -->
-        </section>
+<section class = "hero">
+<div class = "hero-box">
+<h1>¿Necesitas un abogado<br>de confianza?</h1>
+<hr>
+<p>Compromiso, ética y resultados en cada paso que tomamos</p>
+</div>
+</section>
 
-        <!-- Sección del mensaje y contacto -->
-        <section class="hero-content">
-            <h2 class="slogan">Transparencia, ética y resultados.<br>Esas son nuestras reglas.</h2>
+
+<section id = "servicios" class = "seccion seccion-areas">
+<h2 class = "titulo-seccion">Áreas de Práctica</h2>
+<hr class = "divisor-seccion">
+
+<div class = "areas-contenedor zona-oscura">
+    <div class = "card-area">
+        <i class = "fa-solid fa-hands-holding-child"></i>
+        <span>FAMILIA</span>
+    </div>
+
+    <div class = "card-area">
+        <i class = "fa-solid fa-gavel"></i>
+        <span>PENAL</span>
+    </div>
+
+    <div class="card-area">
+        <i class="fa-solid fa-file-signature"></i>
+        <span>SUCESIONES</span>
+    </div>
             
-            <div class="contact-action">
-                <span class="contact-text">Contactanos</span>
-                <!-- Enlace directo a WhatsApp con el número del flyer -->
-                <a href="https://wa.me/5492617200202" target="_blank" rel="noopener noreferrer" class="whatsapp-link" id="wa-btn">
-                    <i class="fab fa-whatsapp"></i>
-                    261 720 0202
-                </a>
+    <div class="card-area">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>LABORAL</span>
+    </div>
+            
+    <div class="card-area">
+        <i class="fa-solid fa-car-burst"></i>
+        <span>ACCIDENTES</span>
+    </div>
+
+
+
+</div>
+
+</section>
+
+<section id = "contacto" class="seccion seccion-contacto">
+        <h2 class="titulo-seccion">Contactanos</h2>
+        <hr class="divisor-seccion">
+        
+        <div class="contacto-contenedor">
+            <div class="mapa">
+                <!-- Iframe de Google Maps -->
+            <iframe src="https://maps.google.com/maps?q=Edificio%20Gomez,%20Av.%20San%20Mart%C3%ADn%201087,%20Mendoza&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+            
+            <div class="formulario">
+                <form id="formContacto">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                    
+                    <label for="mensaje">Tu mensaje</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <script src="../JAVASCRIPT/script.js"></script>
+
 </body>
 </html>
