@@ -77,3 +77,28 @@ document.getElementById('formContacto').addEventListener('submit', function(e) {
         boton.style.opacity = '1';
     }, 1500);
 });
+
+
+const elementosAnimados = document.querySelectorAll('.fade-in');
+
+// Creamos el observador
+const observador = new IntersectionObserver((entradas) => {
+    entradas.forEach((entrada) => {
+        // Si el elemento entra en la pantalla
+        if (entrada.isIntersecting) {
+            entrada.target.classList.add('visible'); // Aparece suavemente
+        } else {
+            // Si el elemento sale de la pantalla, le quitamos la clase 
+            // para que la animación se repita la próxima vez
+            entrada.target.classList.remove('visible'); 
+        }
+    });
+}, {
+    threshold: 0.1, // Se activa cuando al menos el 10% del elemento es visible
+    rootMargin: "0px 0px -50px 0px" // Dispara la animación un poquito antes de llegar al borde inferior
+});
+
+// Le indicamos al observador que vigile cada elemento
+elementosAnimados.forEach((elemento) => {
+    observador.observe(elemento);
+});

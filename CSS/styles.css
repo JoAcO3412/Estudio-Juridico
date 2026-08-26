@@ -212,13 +212,13 @@ header.header-light .logo span {
     align-items: center;
     border-radius: 12px;
     cursor: pointer;
-    transition: transform 0.3s ease;
-}
+transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;}
 
 .card-area:hover{
-    transform: translateY(-5px);
+    transform: translateY(-15px) !important;
     background-color: var(--color-secundario);
     color: var(--color-blanco);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
 
 .card-area i{
@@ -308,6 +308,19 @@ header.header-light .logo span {
 
 .formulario button:hover{
     background-color: var(--color-secundario);
+}
+
+
+.fade-in{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+
+.fade-in.visible{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -442,6 +455,152 @@ footer{
     color: var(--color-blanco);
 }
 
+
+@media (min-width: 1200px) {
+    
+    .logo {
+        font-size: 2.2rem; /* Logo más grande */
+    }
+    
+    .logo span {
+        font-size: 0.9rem;
+    }
+
+    .header-info {
+        gap: 50px; /* Más separación entre los botones del menú */
+    }
+
+    .header-info a {
+        font-size: 1.1rem; /* Letra del menú más grande */
+        gap: 10px;
+    }
+
+    /* --- AJUSTES DE LA CAJA PRINCIPAL (HERO) --- */
+    .hero-box {
+        max-width: 1000px; /* Caja azul más ancha */
+        padding: 80px 120px; /* Más espacio interno (arriba/abajo y lados) */
+    }
+
+    .hero-box h1 {
+        font-size: 4.5rem; /* Título gigante e impactante */
+        margin-bottom: 30px;
+    }
+
+    .hero-box hr {
+        width: 100px; /* Línea divisoria más ancha */
+        margin-bottom: 30px;
+    }
+
+    .hero-box p {
+        font-size: 1.5rem; /* Subtítulo mucho más legible */
+    }
+    
+    /* Títulos mucho más grandes y con más respiro */
+    .titulo-seccion {
+        font-size: 3rem;
+        margin-bottom: 25px;
+    }
+
+    .seccion {
+        padding: 100px 50px; /* Da más espacio vertical a la página */
+    }
+
+    /* Caja azul mucho más amplia */
+    .areas-contenedor {
+        max-width: 1100px; /* Aumentamos el ancho máximo */
+        gap: 50px; /* Más espacio entre tarjetas */
+        padding: 80px;
+    }
+
+    /* Tarjetas extra grandes (260x260px) */
+    .card-area {
+        width: 260px;
+        height: 260px;
+    }
+
+    /* Íconos y letras en proporción a las nuevas tarjetas */
+    .card-area i {
+        font-size: 4.5rem;
+        margin-bottom: 25px;
+    }
+
+    .card-area span {
+        font-size: 1.3rem;
+    }
+
+    /* Contenedor de contacto expandido casi al máximo */
+    .contacto-contenedor {
+        max-width: 1400px;
+        gap: 100px; 
+    }
+    
+    /* Mapa enorme y formulario adaptado */
+    .mapa iframe {
+        min-height: 600px; 
+    }
+
+    .formulario input, 
+    .formulario textarea {
+        padding: 20px; /* Campos de texto más gorditos y cómodos */
+        font-size: 1.1rem;
+    }
+
+    .formulario button {
+        padding: 20px 40px;
+        font-size: 1.1rem;
+    }
+
+    footer {
+        padding: 80px 0 20px 0; /* Más espacio general */
+    }
+
+    .footer-logo {
+        font-size: 2.8rem; /* Logo del footer más grande */
+        margin-bottom: 70px;
+    }
+
+    .footer-logo span {
+        font-size: 1.1rem;
+        letter-spacing: 5px;
+    }
+
+    .footer-contenido {
+        max-width: 1400px; /* Lo igualamos al ancho de la sección de contacto */
+        padding-bottom: 80px;
+    }
+
+    .footer-col h3 {
+        font-size: 1.6rem; /* Títulos de las columnas más grandes */
+        margin-bottom: 40px;
+    }
+
+    .footer-col p, 
+    .col-area {
+        font-size: 1.1rem; /* Textos generales más grandes */
+    }
+
+    .col-area {
+        gap: 25px; /* Más espacio vertical entre "Familia", "Penal", etc. */
+    }
+
+    .footer-links {
+        gap: 30px; /* Más separación entre WhatsApp e Instagram */
+    }
+
+   .footer-links a {
+        font-size: 1.4rem !important; /* Aumentamos la letra de 1.1rem a 1.4rem */
+    }
+
+    .footer-links i {
+        font-size: 2.2rem !important; /* Íconos bastante más grandes (de 1.8rem a 2.2rem) */
+        margin-right: 15px !important; /* Le damos un poco más de aire entre el ícono y el texto */
+    }
+
+    .footer-bottom {
+        font-size: 1rem;
+        padding: 0 100px;
+    }
+}
 
 @media (max-width: 768px){
     header{

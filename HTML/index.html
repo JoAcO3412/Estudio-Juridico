@@ -41,31 +41,31 @@
 
 
 <section id = "servicios" class = "seccion seccion-areas">
-<h2 class = "titulo-seccion">Áreas de Práctica</h2>
+<h2 class = "titulo-seccion fade-in">Áreas de Práctica</h2>
 <hr class = "divisor-seccion">
 
-<div class = "areas-contenedor zona-oscura">
-    <div class = "card-area">
+<div class = "areas-contenedor zona-oscura fade-in">
+    <div class = "card-area fade-in">
         <i class = "fa-solid fa-hands-holding-child"></i>
         <span>FAMILIA</span>
     </div>
 
-    <div class = "card-area">
+    <div class = "card-area fade-in">
         <i class = "fa-solid fa-gavel"></i>
         <span>PENAL</span>
     </div>
 
-    <div class="card-area">
+    <div class="card-area fade-in">
         <i class="fa-solid fa-file-signature"></i>
         <span>SUCESIONES</span>
     </div>
             
-    <div class="card-area">
+    <div class="card-area fade-in">
         <i class="fa-solid fa-briefcase"></i>
         <span>LABORAL</span>
     </div>
             
-    <div class="card-area">
+    <div class="card-area fade-in">
         <i class="fa-solid fa-car-burst"></i>
         <span>ACCIDENTES</span>
     </div>
@@ -77,26 +77,30 @@
 </section>
 
 <section id = "contacto" class="seccion seccion-contacto">
-        <h2 class="titulo-seccion">Contactanos</h2>
+        <h2 class="titulo-seccion fade-in">Contactanos</h2>
         <hr class="divisor-seccion">
         
-        <div class="contacto-contenedor">
-            <div class="mapa">
+        <div class="contacto-contenedor fade-in">
+            <div class="mapa fade-in">
                 <!-- Iframe de Google Maps -->
             <iframe src="https://maps.google.com/maps?q=Edificio%20Gomez,%20Av.%20San%20Mart%C3%ADn%201087,%20Mendoza&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
             
-            <div class="formulario">
-                <form id="formContacto">
-                    <label for="nombre">Nombre</label>
+            <div class="formulario fade-in">
+                <form id="formContacto" class="fade-in" action="https://formsubmit.co/joaquindevige25@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="https://github.com/JoAcO3412/Estudio-Juridico">
+                    <!-- Desactiva el captcha para que la experiencia sea más fluida -->
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <label for="nombre" class="fade-in">Nombre</label>
                     <input type="text" id="nombre" name="nombre" required>
                     
-                    <label for="correo">Correo electrónico</label>
+                    <label for="correo" class="fade-in">Correo electrónico</label>
                     <input type="email" id="correo" name="correo" required>
                     
-                    <label for="mensaje">Tu mensaje</label>
+                    <label for="mensaje" class="fade-in">Tu mensaje</label>
                     <textarea id="mensaje" name="mensaje" required></textarea>
                     
-                    <button type="submit">Enviar</button>
+                    <button type="submit" class="fade-in">Enviar</button>
                 </form>
             </div>
         </div>
