@@ -14,10 +14,12 @@
 }
 
 html {
-    scroll-behavior: smooth; /* Hace que el deslizamiento sea animado y suave */
+    overflow-x: hidden;
+    scroll-behavior: smooth; 
 }
 
 body{
+    overflow-x: hidden;
     font-family: var(--fuente-textos);
     background-color: var(--color-fondo);
     color: var(--color-primario);
@@ -53,6 +55,36 @@ header.header-light .logo span {
     color: #666; 
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 21px; 
+    cursor: pointer;
+    z-index: 100;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: currentColor; 
+    border-radius: 3px;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-toggle.abierto span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg); 
+}
+
+.menu-toggle.abierto span:nth-child(2) {
+    opacity: 0; 
+}
+
+.menu-toggle.abierto span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg); 
+}
 
 .logo{
     font-family: var(--fuente-titulos);
@@ -212,7 +244,8 @@ header.header-light .logo span {
     align-items: center;
     border-radius: 12px;
     cursor: pointer;
-transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;}
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
 
 .card-area:hover{
     transform: translateY(-15px) !important;
@@ -446,7 +479,6 @@ footer{
     margin-right: 12px !important;
 }
 
-/* Línea de Copyright final */
 .footer-bottom {
     text-align: left;
     padding: 0 50px;
@@ -459,7 +491,7 @@ footer{
 @media (min-width: 1200px) {
     
     .logo {
-        font-size: 2.2rem; /* Logo más grande */
+        font-size: 2.2rem; 
     }
     
     .logo span {
@@ -467,58 +499,53 @@ footer{
     }
 
     .header-info {
-        gap: 50px; /* Más separación entre los botones del menú */
+        gap: 50px; 
     }
 
     .header-info a {
-        font-size: 1.1rem; /* Letra del menú más grande */
+        font-size: 1.1rem; 
         gap: 10px;
     }
 
-    /* --- AJUSTES DE LA CAJA PRINCIPAL (HERO) --- */
     .hero-box {
-        max-width: 1000px; /* Caja azul más ancha */
-        padding: 80px 120px; /* Más espacio interno (arriba/abajo y lados) */
+        max-width: 1000px; 
+        padding: 80px 120px; 
     }
 
     .hero-box h1 {
-        font-size: 4.5rem; /* Título gigante e impactante */
+        font-size: 4.5rem; 
         margin-bottom: 30px;
     }
 
     .hero-box hr {
-        width: 100px; /* Línea divisoria más ancha */
+        width: 100px; 
         margin-bottom: 30px;
     }
 
     .hero-box p {
-        font-size: 1.5rem; /* Subtítulo mucho más legible */
+        font-size: 1.5rem; 
     }
     
-    /* Títulos mucho más grandes y con más respiro */
     .titulo-seccion {
         font-size: 3rem;
         margin-bottom: 25px;
     }
 
     .seccion {
-        padding: 100px 50px; /* Da más espacio vertical a la página */
+        padding: 100px 50px; 
     }
 
-    /* Caja azul mucho más amplia */
     .areas-contenedor {
-        max-width: 1100px; /* Aumentamos el ancho máximo */
-        gap: 50px; /* Más espacio entre tarjetas */
+        max-width: 1100px; 
+        gap: 50px; 
         padding: 80px;
     }
 
-    /* Tarjetas extra grandes (260x260px) */
     .card-area {
         width: 260px;
         height: 260px;
     }
 
-    /* Íconos y letras en proporción a las nuevas tarjetas */
     .card-area i {
         font-size: 4.5rem;
         margin-bottom: 25px;
@@ -528,20 +555,18 @@ footer{
         font-size: 1.3rem;
     }
 
-    /* Contenedor de contacto expandido casi al máximo */
     .contacto-contenedor {
         max-width: 1400px;
         gap: 100px; 
     }
     
-    /* Mapa enorme y formulario adaptado */
     .mapa iframe {
         min-height: 600px; 
     }
 
     .formulario input, 
     .formulario textarea {
-        padding: 20px; /* Campos de texto más gorditos y cómodos */
+        padding: 20px; 
         font-size: 1.1rem;
     }
 
@@ -551,11 +576,11 @@ footer{
     }
 
     footer {
-        padding: 80px 0 20px 0; /* Más espacio general */
+        padding: 80px 0 20px 0; 
     }
 
     .footer-logo {
-        font-size: 2.8rem; /* Logo del footer más grande */
+        font-size: 2.8rem; 
         margin-bottom: 70px;
     }
 
@@ -565,35 +590,35 @@ footer{
     }
 
     .footer-contenido {
-        max-width: 1400px; /* Lo igualamos al ancho de la sección de contacto */
+        max-width: 1400px; 
         padding-bottom: 80px;
     }
 
     .footer-col h3 {
-        font-size: 1.6rem; /* Títulos de las columnas más grandes */
+        font-size: 1.6rem; 
         margin-bottom: 40px;
     }
 
     .footer-col p, 
     .col-area {
-        font-size: 1.1rem; /* Textos generales más grandes */
+        font-size: 1.1rem; 
     }
 
     .col-area {
-        gap: 25px; /* Más espacio vertical entre "Familia", "Penal", etc. */
+        gap: 25px; 
     }
 
     .footer-links {
-        gap: 30px; /* Más separación entre WhatsApp e Instagram */
+        gap: 30px; 
     }
 
    .footer-links a {
-        font-size: 1.4rem !important; /* Aumentamos la letra de 1.1rem a 1.4rem */
+        font-size: 1.4rem !important; 
     }
 
     .footer-links i {
-        font-size: 2.2rem !important; /* Íconos bastante más grandes (de 1.8rem a 2.2rem) */
-        margin-right: 15px !important; /* Le damos un poco más de aire entre el ícono y el texto */
+        font-size: 2.2rem !important; 
+        margin-right: 15px !important; 
     }
 
     .footer-bottom {
@@ -602,50 +627,166 @@ footer{
     }
 }
 
-@media (max-width: 768px){
-    header{
+@media (max-width: 768px) {
+
+    .seccion {
+        padding: 60px 20px;
+    }
+
+    .titulo-seccion {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 1.6rem; 
+    }
+
+    .logo span {
+        font-size: 0.7rem;
+    }
+
+    .menu-toggle {
+        display: flex;
         flex-direction: column;
-        gap: 15px;
-        text-align: center;
+        justify-content: space-between;
+        width: 32px;
+        height: 21px; 
+        cursor: pointer;
+        z-index: 100;
     }
 
-    .header-info{
+    .header-info {
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        flex-direction: column; 
+        align-items: center;
+        padding: 0;
+        overflow: hidden;
+        z-index: 99;
+
+        background-color: rgba(38, 44, 63, 0.85);
+        color: var(--color-blanco);
+
+        max-height: 0; 
+        opacity: 0;
+        transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, padding 0.4s ease-in-out, background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .header-info.activo {
+        max-height: 250px; 
+        opacity: 1;
+        padding: 20px 0; 
+        gap: 15px; 
+    }
+
+    header.header-solid-dark .header-info {
+        background-color: var(--color-primario);
+        color: var(--color-blanco);
+    }
+
+    header.header-light .header-info {
+        background-color: var(--color-blanco);
+        color: var(--color-primario);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-info a {
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+    .hero {
+        height: 70vh; 
+    }
+
+    .hero-box {
+        max-width: 90%;
+        padding: 40px 20px; 
+    }
+
+    .hero-box h1 {
+        font-size: 2.2rem; 
+        margin-bottom: 20px;
+    }
+
+    .hero-box p {
+        font-size: 1.1rem; 
+    }
+
+   
+    .areas-contenedor {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
+        gap: 20px;
     }
 
-    .hero-box h1{
-        font-size: 2rem;
+    .card-area {
+        width: 100%;
+        max-width: 300px;
     }
 
-    .contacto-contenedor{
-        grid-template-columns: 1fr;
-    }
-
-    .mapa iframe{
-        height: 250px;
-    }
-
-    .footer-contenido{
+    .contacto-contenedor {
         flex-direction: column;
-        gap: 50px;
+        gap: 40px;
     }
 
+    .mapa, .formulario {
+        width: 100%;
+    }
+
+
+    .footer-contenido {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+        padding: 0 25px 40px;
+    }
+ 
+    .footer-col {
+        padding: 0;
+        width: 100%;
+    }
+ 
     .border-col {
         border-left: none;
         border-right: none;
         border-top: 1px solid rgba(255, 255, 255, 0.4);
         border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-        padding: 40px 0;
+        height: auto;
+        padding: 25px 0;
     }
-    
-    .footer-link {
+ 
+    .footer-lista-areas {
+        flex-direction: column;
+        gap: 15px;
         align-items: center;
     }
-
+ 
+    .col-area {
+        text-align: center;
+        align-items: center;
+    }
+ 
+    .col-area li {
+        justify-content: center;
+    }
+ 
     .footer-bottom {
         text-align: center;
         padding: 0 20px;
     }
+
+
 
 }
