@@ -478,16 +478,20 @@ footer{
     color: var(--color-blanco);
 }
 
+
 @media (max-width: 768px) {
+
 
     .seccion {
         padding: 60px 20px;
     }
 
+
     .titulo-seccion {
         font-size: 2.2rem;
         margin-bottom: 20px;
     }
+
 
     header {
         width: 100%;
@@ -505,6 +509,7 @@ footer{
         font-size: 0.7rem;
     }
 
+
     .menu-toggle {
         display: flex;
         flex-direction: column;
@@ -514,6 +519,7 @@ footer{
         cursor: pointer;
         z-index: 100;
     }
+
 
     .header-info {
         position: absolute;
@@ -526,8 +532,10 @@ footer{
         overflow: hidden;
         z-index: 99;
 
+
         background-color: rgba(38, 44, 63, 0.85);
         color: var(--color-blanco);
+
 
         max-height: 0;
         opacity: 0;
@@ -535,12 +543,14 @@ footer{
                     background-color 0.3s ease, color 0.3s ease;
     }
 
+
     .header-info.activo {
         max-height: 250px;
         opacity: 1;
         padding: 20px 0;
         gap: 15px;
     }
+
 
     header.header-solid-dark .header-info {
         background-color: var(--color-primario);
@@ -553,10 +563,12 @@ footer{
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     }
 
+
     .header-info a {
         font-size: 1.1rem;
         margin: 0;
     }
+
 
     .hero {
         height: 70vh;
@@ -576,6 +588,8 @@ footer{
         font-size: 1.1rem;
     }
 
+
+
     .areas-contenedor {
         flex-direction: column;
         align-items: center;
@@ -587,6 +601,7 @@ footer{
         max-width: 300px;
     }
 
+
     .contacto-contenedor {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -596,6 +611,7 @@ footer{
         width: 100%;
     }
 
+
     .formulario {
         order: 1;
     }
@@ -603,6 +619,8 @@ footer{
     .mapa {
         order: 2;
     }
+
+
 
     .footer-contenido {
         flex-direction: column;
@@ -616,6 +634,7 @@ footer{
         width: 100%;
     }
 
+
     .border-col {
         border-left: none;
         border-right: none;
@@ -624,6 +643,7 @@ footer{
         height: auto;
         padding: 25px 0;
     }
+
 
     .footer-lista-areas {
         flex-direction: column;
@@ -640,9 +660,12 @@ footer{
         justify-content: center;
     }
 
+
+
     li.hidden-li {
         display: none;
     }
+
 
     .footer-bottom {
         text-align: center;
