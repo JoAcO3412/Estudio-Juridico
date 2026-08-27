@@ -75,3 +75,28 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 });
+
+
+// 6. CARRUSEL DE IMÁGENES DE FONDO DEL HERO
+
+const heroSlides = document.querySelectorAll('.hero-bg-slide');
+let indiceSlideActual = 0;
+const duracionPorImagen = 5000; 
+ 
+if (heroSlides.length > 1) {
+    setInterval(() => {
+        heroSlides[indiceSlideActual].classList.remove('activa');
+        indiceSlideActual = (indiceSlideActual + 1) % heroSlides.length;
+        heroSlides[indiceSlideActual].classList.add('activa');
+    }, duracionPorImagen);
+}
+
+
+function actualizarAlturaHeader() {
+    document.documentElement.style.setProperty('--header-height', header.offsetHeight + 'px');
+}
+ 
+actualizarAlturaHeader();
+window.addEventListener('load', actualizarAlturaHeader);
+window.addEventListener('resize', actualizarAlturaHeader);
+ 
