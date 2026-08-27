@@ -478,165 +478,16 @@ footer{
     color: var(--color-blanco);
 }
 
-@media (min-width: 2200px) {
-
-    .logo {
-        font-size: 2.2rem;
-    }
-
-    .logo span {
-        font-size: 0.9rem;
-    }
-
-    .header-info {
-        gap: 50px;
-    }
-
-    .header-info a {
-        font-size: 1.1rem;
-        gap: 10px;
-    }
-
-
-    .hero-box {
-        max-width: 1000px;
-        padding: 80px 120px;
-    }
-
-    .hero-box h1 {
-        font-size: 4.5rem;
-        margin-bottom: 30px;
-    }
-
-    .hero-box hr {
-        width: 100px;
-        margin-bottom: 30px;
-    }
-
-    .hero-box p {
-        font-size: 1.5rem;
-    }
-
-
-    .titulo-seccion {
-        font-size: 3rem;
-        margin-bottom: 25px;
-    }
-
-    .seccion {
-        padding: 100px 50px;
-    }
-
-
-    .areas-contenedor {
-        max-width: 1100px;
-        gap: 50px;
-        padding: 80px;
-    }
-
-
-    .card-area {
-        width: 260px;
-        height: 260px;
-    }
-
-
-    .card-area i {
-        font-size: 4.5rem;
-        margin-bottom: 25px;
-    }
-
-    .card-area span {
-        font-size: 1.3rem;
-    }
-
-
-    .contacto-contenedor {
-        max-width: 1400px;
-        gap: 100px;
-    }
-
-
-    .mapa iframe {
-        min-height: 600px;
-    }
-
-    .formulario input,
-    .formulario textarea {
-        padding: 20px;
-        font-size: 1.1rem;
-    }
-
-    .formulario button {
-        padding: 20px 40px;
-        font-size: 1.1rem;
-    }
-
-    footer {
-        padding: 80px 0 20px 0;
-    }
-
-    .footer-logo {
-        font-size: 2.8rem;
-        margin-bottom: 70px;
-    }
-
-    .footer-logo span {
-        font-size: 1.1rem;
-        letter-spacing: 5px;
-    }
-
-    .footer-contenido {
-        max-width: 1400px;
-        padding-bottom: 80px;
-    }
-
-    .footer-col h3 {
-        font-size: 1.6rem;
-        margin-bottom: 40px;
-    }
-
-    .footer-col p,
-    .col-area {
-        font-size: 1.1rem;
-    }
-
-    .col-area {
-        gap: 25px;
-    }
-
-    .footer-links {
-        gap: 30px;
-    }
-
-   .footer-links a {
-        font-size: 1.4rem !important;
-    }
-
-    .footer-links i {
-        font-size: 2.2rem !important;
-        margin-right: 15px !important;
-    }
-
-    .footer-bottom {
-        font-size: 1rem;
-        padding: 0 100px;
-    }
-}
-
 @media (max-width: 768px) {
-
 
     .seccion {
         padding: 60px 20px;
     }
 
-
     .titulo-seccion {
         font-size: 2.2rem;
         margin-bottom: 20px;
     }
-
 
     header {
         width: 100%;
@@ -654,7 +505,6 @@ footer{
         font-size: 0.7rem;
     }
 
-
     .menu-toggle {
         display: flex;
         flex-direction: column;
@@ -664,7 +514,6 @@ footer{
         cursor: pointer;
         z-index: 100;
     }
-
 
     .header-info {
         position: absolute;
@@ -677,10 +526,8 @@ footer{
         overflow: hidden;
         z-index: 99;
 
-
         background-color: rgba(38, 44, 63, 0.85);
         color: var(--color-blanco);
-
 
         max-height: 0;
         opacity: 0;
@@ -688,14 +535,12 @@ footer{
                     background-color 0.3s ease, color 0.3s ease;
     }
 
-
     .header-info.activo {
         max-height: 250px;
         opacity: 1;
         padding: 20px 0;
         gap: 15px;
     }
-
 
     header.header-solid-dark .header-info {
         background-color: var(--color-primario);
@@ -708,12 +553,10 @@ footer{
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     }
 
-
     .header-info a {
         font-size: 1.1rem;
         margin: 0;
     }
-
 
     .hero {
         height: 70vh;
@@ -733,8 +576,6 @@ footer{
         font-size: 1.1rem;
     }
 
-
-
     .areas-contenedor {
         flex-direction: column;
         align-items: center;
@@ -746,7 +587,6 @@ footer{
         max-width: 300px;
     }
 
-
     .contacto-contenedor {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -756,7 +596,6 @@ footer{
         width: 100%;
     }
 
-
     .formulario {
         order: 1;
     }
@@ -764,8 +603,6 @@ footer{
     .mapa {
         order: 2;
     }
-
-
 
     .footer-contenido {
         flex-direction: column;
@@ -779,7 +616,6 @@ footer{
         width: 100%;
     }
 
-
     .border-col {
         border-left: none;
         border-right: none;
@@ -788,7 +624,6 @@ footer{
         height: auto;
         padding: 25px 0;
     }
-
 
     .footer-lista-areas {
         flex-direction: column;
@@ -805,12 +640,9 @@ footer{
         justify-content: center;
     }
 
-
-
     li.hidden-li {
         display: none;
     }
-
 
     .footer-bottom {
         text-align: center;
