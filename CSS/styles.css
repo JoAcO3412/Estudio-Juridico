@@ -527,9 +527,22 @@ footer{
         left: -15px; 
         margin-top: -12px; 
     }
+    
+    .logo-blanco {
+    opacity: 1;
+    margin-left: -25px;
+}
+
+.logo-oscuro{
+    margin-top: -4px;
+    margin-left: -25px;
+
+}
 
     .footer-logo-img {
-        height: 65px;
+        height: 140px; 
+        margin-top: -40px;
+        margin-bottom: -13px;
     }
 
     .menu-toggle {
