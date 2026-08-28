@@ -52,23 +52,13 @@ header.header-light {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 32px;
-    height: 21px;
-    cursor: pointer;
-    z-index: 100;
-}
-
 .menu-toggle span {
     display: block;
     height: 3px;
     width: 100%;
     background-color: currentColor;
     border-radius: 3px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out; 
 }
 
 .menu-toggle.abierto span:nth-child(1) {
@@ -77,6 +67,7 @@ header.header-light {
 
 .menu-toggle.abierto span:nth-child(2) {
     opacity: 0;
+    transform: scaleX(0); 
 }
 
 .menu-toggle.abierto span:nth-child(3) {
@@ -450,12 +441,24 @@ footer{
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.col-area li:hover {
+    color: #aeb3c0; 
+    transform: translateX(4px); 
 }
 
 .col-area li::before {
     content: '\25CF';
     font-size: 0.5rem;
     color: var(--color-blanco);
+    transition: color 0.3s ease; 
+}
+
+.col-area li:hover::before {
+    color: #aeb3c0;
 }
 
 .hidden-li {
@@ -478,11 +481,12 @@ footer{
     text-transform: none !important;
     display: flex;
     align-items: center;
-    transition: color 0.3s;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-link a:hover {
     color: #aeb3c0 !important;
+    transform: translateX(4px); 
 }
 
 .footer-link i {
@@ -598,22 +602,24 @@ footer{
         margin: 0;
     }
 
-    .hero {
-        height: 70vh;
+   .hero {
+        height: 55vh; 
+        padding-top: var(--header-height);
     }
 
     .hero-box {
-        max-width: 90%;
-        padding: 40px 20px;
+        max-width: 92%;
+        padding: 30px 20px; 
+        border-radius: 8px; 
     }
 
     .hero-box h1 {
-        font-size: 2.2rem;
-        margin-bottom: 20px;
+        font-size: 1.8rem; 
+        margin-bottom: 15px;
     }
 
     .hero-box p {
-        font-size: 1.1rem;
+        font-size: 0.95rem; 
     }
 
     .areas-contenedor {
