@@ -310,7 +310,7 @@ header.header-light .logo-oscuro {
 .card-area {
     background-color: var(--color-blanco);
     color: var(--color-primario);
-    width: 260px;
+    width: 400px;
     height: auto;
     padding: 30px 25px;
     display: flex;
@@ -331,21 +331,21 @@ header.header-light .logo-oscuro {
 }
 
 .card-area i {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     margin-bottom: 15px;
 }
 
 .card-area-titulo {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .card-area-desc {
     position: relative;
-    font-size: 0.85rem;
-    line-height: 1.5;
+    font-size: 1.3rem;
+    line-height: 1.7;
     margin-top: 12px;
     opacity: 0.85;
 }
@@ -531,7 +531,8 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .footer-link a {
@@ -543,6 +544,7 @@ footer {
     text-transform: none !important;
     display: flex;
     align-items: center;
+    max-width: 280px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -554,6 +556,7 @@ footer {
 .footer-link i {
     font-size: 1.4rem !important;
     margin-right: 12px !important;
+    margin-top: 0;
 }
 
 .footer-bottom {
@@ -563,6 +566,15 @@ footer {
     font-size: 0.85rem;
     color: var(--color-blanco);
 }
+
+.footer-link a:last-child {
+    align-items: flex-start; 
+}
+
+.footer-link a:last-child i {
+    margin-top: 4px; 
+}
+
 
 @media (max-width: 768px) {
     .seccion {
@@ -757,5 +769,28 @@ footer {
         padding: 0 15px;
         font-size: 1rem;
     }
+
+    .footer-link {
+        align-items: center; 
+    }
+
+    .footer-link a {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-blanco) !important;
+    text-decoration: none !important;
+    font-family: var(--fuente-textos);
+    font-size: 0.95rem;
+    font-weight: 400;
+    max-width: 280px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link i {
+    font-size: 1.4rem !important;
+    margin: 0 !important;
+}
     
 }
