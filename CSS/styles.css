@@ -115,8 +115,8 @@ header.header-light .logo-oscuro {
 
 .header-info {
     display: flex;
-    gap: 30px;
-    font-size: 0.85rem;
+    gap: 40px; /*AUMENTO TAMAÑO*/
+    font-size: 1rem; /*AUMENTO TAMAÑO*/
 }
 
 .header-info a {
@@ -258,22 +258,22 @@ header.header-light .logo-oscuro {
 
 .titulo-seccion {
     font-family: var(--fuente-titulos);
-    font-size: 2.2rem;
+    font-size: 2.8rem; /*AUMENTO TAMAÑO*/
     color: var(--color-primario);
     margin-bottom: 15px;
 }
 
 .divisor-seccion {
-    width: 13%;
+    width: 100px;
     border: none;
     border-top: 2px solid var(--color-primario);
     margin: 15px auto 30px auto;
 }
 
 .nosotros-texto {
-    max-width: 750px;
+    max-width: 950px; /*AUMENTO TAMAÑO*/
     margin: 0 auto;
-    font-size: 1.40rem;
+    font-size: 1.6rem; /*AUMENTO TAMAÑO*/
     line-height: 1.9;
     color: var(--color-primario);
     text-align: center;
@@ -286,12 +286,11 @@ header.header-light .logo-oscuro {
     z-index: 1; 
     background-color: transparent; 
     padding: 80px 0; 
-    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 90px; 
-    max-width: 1050px; 
+    gap: 60px; /*AUMENTO TAMAÑO*/ 
+    max-width: 1400px; /*AUMENTO TAMAÑO*/ 
     margin: 0 auto;
 }
 
@@ -310,9 +309,9 @@ header.header-light .logo-oscuro {
 .card-area {
     background-color: var(--color-blanco);
     color: var(--color-primario);
-    width: 400px;
+    width: 440px; /*AUMENTO TAMAÑO*/
     height: auto;
-    padding: 30px 25px;
+    padding: 40px 35px; /*AUMENTO TAMAÑO*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -331,13 +330,13 @@ header.header-light .logo-oscuro {
 }
 
 .card-area i {
-    font-size: 3.2rem;
+    font-size: 4rem; /*AUMENTO TAMAÑO*/
     margin-bottom: 15px;
 }
 
 .card-area-titulo {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.4rem; /*AUMENTO TAMAÑO*/
     letter-spacing: 1px;
     margin-top: 5px;
 }
@@ -354,7 +353,7 @@ header.header-light .logo-oscuro {
     text-align: left;
     margin-top: 15px;
     padding-left: 20px;
-    font-size: 1.05rem; 
+    font-size: 1.15rem; /*AUMENTO TAMAÑO*/ 
     line-height: 1.5;
     opacity: 0.85;
     width: 100%;
@@ -372,7 +371,7 @@ header.header-light .logo-oscuro {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    max-width: 1000px;
+    max-width: 1250px; /*AUMENTO TAMAÑO*/
     margin: 0 auto;
     text-align: left;
 }
