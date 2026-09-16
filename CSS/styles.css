@@ -350,6 +350,23 @@ header.header-light .logo-oscuro {
     opacity: 0.85;
 }
 
+.card-area-lista {
+    text-align: left;
+    margin-top: 15px;
+    padding-left: 20px;
+    font-size: 1.05rem; 
+    line-height: 1.5;
+    opacity: 0.85;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+}
+
+.card-area-lista li {
+    list-style-type: disc; 
+}
+
 
 .contacto-contenedor {
     display: grid;
