@@ -665,24 +665,12 @@ footer {
 .col-area li {
     display: flex;
     align-items: center;
-    gap: 10px;
     cursor: pointer; 
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .col-area li:hover {
     color: #aeb3c0; 
-}
-
-.col-area li::before {
-    content: '\25CF';
-    font-size: 0.5rem;
-    color: var(--color-blanco);
-    transition: color 0.3s ease; 
-}
-
-.col-area li:hover::before {
-    color: #aeb3c0;
 }
 
 .hidden-li {
