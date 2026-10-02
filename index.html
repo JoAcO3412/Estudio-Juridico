@@ -48,7 +48,7 @@
 
 <section class="seccion seccion-nosotros">
 <h2 class="titulo-seccion fade-in">Quienes Somos</h2>
-<hr class="divisor-seccion">
+<hr class="divisor-seccion fade-in">
 <p class="nosotros-texto fade-in">
     En Alba & Asociados combinamos experiencia y cercanía para acompañarte en cada paso del proceso legal.
     Creemos en un asesoramiento claro, honesto y adaptado a la situación particular de cada cliente,
@@ -86,9 +86,45 @@
     </div>
 </section>
 
+<section class="seccion seccion-biografia">
+
+    <div class="biografia-contenedor fade-in">
+
+        <div class="biografia-imagen-wrapper">
+            <img src="HTML/img/abogado-alba.jpg" alt="Abogado Titular Alba & Asociados">
+            <div class="biografia-tarjeta">
+                <h3>Dr. Sebastián Alba</h3>
+                <p>Abogado Titular</p>
+            </div>
+        </div>
+
+        <div class="biografia-contenido">
+            <div class="biografia-titulo">
+                <div class="biografia-linea"></div>
+                <h2>Abogado</h2>
+            </div>
+
+            <p class="biografia-texto">
+                A traves de mi trayectoria profesional en la provincia de Mendoza, asumo el compromiso de brindar soluciones jurídicas efectivas con un enfoque claro, accesible y riguroso. Mi propósito es acercar el derecho a las personas, explicando de forma sencilla los procesos y cómo defender sus intereses.
+            </p>
+            <p class="biografia-texto">
+                Me especializo en resolver conflictos complejos, traduciendo conceptos legales al lenguaje común y ofreciendo una perspectiva honesta sobre cada caso. No solo busco resultados concretos, sino tambien acompañar a mis clientes dándoles la tranquilidad que necesitan en cada etapa del reclamo.
+            </p>
+            <div class="biografia-botones">
+                <a href="#contacto" class="biografia-btn">
+                    <i class="fa-regular fa-envelope"></i> Email
+                </a>
+                <a href="https://wa.me/5492617200202" target="_blank" class="biografia-btn">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id = "servicios" class = "seccion seccion-areas">
 <h2 class = "titulo-seccion fade-in">Áreas de Práctica</h2>
-<hr class = "divisor-seccion">
+<hr class = "divisor-seccion fade-in">
 
 <div class = "areas-contenedor zona-oscura">
 
@@ -152,7 +188,7 @@
 
 <section id = "contacto" class="seccion seccion-contacto">
         <h2 class="titulo-seccion fade-in">Contactanos</h2>
-        <hr class="divisor-seccion">
+        <hr class="divisor-seccion fade-in">
         
         <div class="contacto-contenedor fade-in">
             <div class="mapa fade-in">
@@ -163,16 +199,13 @@
     <input type="hidden" name="_next" value="https://joaco3412.github.io/Estudio-Juridico/">
     <input type="hidden" name="_captcha" value="false">
 
-    <!-- Fila que pone Nombre y Apellido uno al lado del otro -->
     <div class="fila-formulario">
         
-        <!-- Bloque 1: Solo Nombre -->
         <div class="grupo-formulario">
             <label for="nombre" class="fade-in label-requerido">Nombre</label>
             <input type="text" id="nombre" name="nombre" required>
         </div>
 
-        <!-- Bloque 2: Solo Apellido -->
         <div class="grupo-formulario">
             <label for="apellido" class="fade-in label-requerido">Apellido</label>
             <input type="text" id="apellido" name="apellido" required>
@@ -180,13 +213,11 @@
 
     </div>
     
-        <!-- Correo abajo ocupando todo el ancho -->
         <div class="grupo-formulario">
             <label for="correo" class="fade-in label-requerido">Correo electrónico</label>
             <input type="email" id="correo" name="correo" required>
         </div>
     
-        <!-- Mensaje abajo ocupando todo el ancho -->
         <div class="grupo-formulario">
             <label for="mensaje" class="fade-in label-requerido">Tu mensaje</label>
             <textarea id="mensaje" name="mensaje" required></textarea>

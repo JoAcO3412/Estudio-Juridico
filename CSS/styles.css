@@ -360,6 +360,122 @@ header.header-light .logo-oscuro {
     text-align: center;
 }
 
+.seccion-biografia{
+    padding: 100px 50px 0 50px;
+    background-color: var(--color-fondo);
+    position: relative;
+    z-index: 2;
+}
+
+.biografia-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.biografia-imagen-wrapper{
+    position: relative;
+    flex: 0 0 480px; /*Ancho fijo para mantener la proporción de la imagen*/
+}
+
+.biografia-imagen-wrapper img{
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.biografia-tarjeta{
+    position: absolute;
+    bottom: -25px;
+    right: -30px;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 15px 35px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.biografia-tarjeta h3{
+    font-family: var(--fuente-textos);
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+}
+
+.biografia-tarjeta p{
+    font-family: var(--fuente-textos);
+    font-size: 0.95rem;
+    font-weight: 400;
+    opacity: 0.85;
+}
+
+.biografia-contenido{
+    flex: 1;
+    text-align: left;
+}
+
+.biografia-titulo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.biografia-linea{
+    width: 5px;
+    height: 48px;
+    background-color: var(--color-secundario);
+    border-radius: 3px;
+}
+
+.biografia-titulo h2{
+    font-family: var(--fuente-titulos);
+    font-size: 3.5rem;
+    color: var(--color-primario);
+}
+
+.biografia-texto{
+    font-family: var(--fuente-textos);
+    font-size: 1.6rem;
+    line-height: 1.9;
+    color: var(--color-primario);
+    margin-bottom: 25px;
+}
+
+.biografia-botones{
+    display: flex;
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.biografia-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    background-color: transparent;
+    border: 1px solid var(--color-primario);
+    color: var(--color-primario);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.biografia-btn:hover{
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 
 .areas-contenedor {
     position: relative; 
@@ -728,7 +844,7 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .seccion {
         padding: 60px 20px;
     }
@@ -884,6 +1000,54 @@ footer {
 
     .stat-numero {
         font-size: 2rem;
+    }
+
+    .seccion-biografia{
+        padding: 60px 20px 0 20px;
+    }
+
+    .biografia-contenedor{
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .biografia-imagen-wrapper{
+        flex: auto;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .biografia-imagen-wrapper img{
+        height: 450px;
+    }
+
+    .biografia-tarjeta{
+        right: 50%;
+        transform: translateX(50%);
+        bottom: -25px;
+        width: 85%;
+        padding: 15px 20px;
+    }
+
+    .biografia-titulo h2{
+        font-size: 2.8rem;
+    }
+
+    .biografia-texto{
+        font-size: 1rem;
+    }
+
+    .biografia-botones{
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .biografia-btn{
+        width: 100%;
+        justify-content: center;
     }
 
     .contacto-contenedor {
